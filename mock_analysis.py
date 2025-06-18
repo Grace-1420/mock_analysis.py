@@ -1,5 +1,6 @@
-
-
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
 import pandas as pd
 
 from io import StringIO
@@ -19,6 +20,10 @@ C010,50,Male,400.00,Electronics,2024-11-11,USA,Debit Card
 """)
 
 df = pd.read_csv(data)
-df['Purchase Date'] = pd.to_datetime(df['Purchase Date'])  # convert date
-df.head()
-print(df)
+# df['Purchase Date'] = pd.to_datetime(df['Purchase Date'])  # convert date
+# df = df.rename(columns={"Product Category" : "Category"})
+# #print (df)
+# df['Gender'].value_counts().plot(kind='pie')
+# plt.title('PIE CHART OF GENDER DISTRIBUTION')
+# plt.savefig('PIE CHART OF GENDER DISTRIBUTION.png')
+# plt.show
